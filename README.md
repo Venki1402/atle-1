@@ -4,7 +4,8 @@
 
 In the competitive programming world, it can be **challenging to keep track of contest dates and timings across multiple platforms** like Codeforces, CodeChef, and LeetCode. Contest schedules vary significantly, and missing contests can result in lost opportunities for practice and improvement. Contest Tracker aims to solve this problem by providing a unified platform to track upcoming and past contests across these platforms, allowing users to filter contests, bookmark important ones, and even add solution links for reference.
 
----
+## Demo
+[OneDrive Video](https://sstscaler-my.sharepoint.com/:v:/g/personal/sai_23bcs10095_ms_sst_scaler_com/EQo-V7PwrBxBgQxYtt8IKcYB2LKeL82zILKvwhVpW4tUiQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8zjWbz)
 
 ## Features
 
@@ -22,7 +23,6 @@ In the competitive programming world, it can be **challenging to keep track of c
 4. **Add Solution Links**:
    - Add links to solutions for past contests.
    - Edit or update solution links directly from the interface.
----
 
 ## Technologies Used
 
@@ -38,8 +38,6 @@ In the competitive programming world, it can be **challenging to keep track of c
 - **MongoDB** with Mongoose for database management
 - **Axios** for fetching external APIs
 
----
-
 ## API Endpoints
 
 ### Contest Management
@@ -53,8 +51,6 @@ In the competitive programming world, it can be **challenging to keep track of c
    - Add or update a solution link for a contest.
 5. `POST /api/contests/sync`
    - Sync contests from all platforms (Codeforces, CodeChef, LeetCode).
-
----
 
 ## Installation Guide
 
@@ -103,13 +99,9 @@ In the competitive programming world, it can be **challenging to keep track of c
 
 4. Open the application in your browser at `http://localhost:8080`.
 
----
-
 ## Scheduled Syncing of Contests
 
 The backend automatically syncs contest data every 6 hours using `node-cron`. This ensures that users always see up-to-date contest information.
-
----
 
 ## Future Enhancements
 
