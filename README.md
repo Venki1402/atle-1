@@ -117,3 +117,4 @@ The backend automatically syncs contest data every 6 hours using `node-cron`. Th
 2. Implement notifications/reminders for bookmarked contests.
 3. Improve error handling for external API failures.
 4. Add user authentication to save preferences across sessions.
+5. Implement Pagination for past contests
