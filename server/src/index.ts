@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import contestRoutes from "./routes/contestRoutes";
+import cron from "node-cron";
+import { syncContests } from "./services/contestService";
 
 dotenv.config();
 
@@ -30,3 +32,9 @@ mongoose
   .catch((error) => {
     console.error("MongoDB connection error:", error);
   });
+
+cron.schedule("0 */6 * * *", async () => {
+  console.log("Running scheduled contest sync...");
+  await syncContests();
+  console.log("Scheduled sync completed");
+});
