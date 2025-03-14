@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/models/contest.ts","./src/routes/contestroutes.ts","./src/services/contestservice.ts"],"version":"5.8.2"}
